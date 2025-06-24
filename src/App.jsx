@@ -25,7 +25,7 @@ const randomise = () => {
     return shuffledArray.slice(0, 9);
 };
 
-const App = () => {
+const Container = () => {
     const randomArray = randomise();
     return (
         <div className="container">
@@ -47,6 +47,12 @@ const App = () => {
             })}
         </div>
     );
+};
+
+const App = () => {
+    return Array(48)
+        .fill(0)
+        .map(() => <Container />);
 };
 
 export default App;

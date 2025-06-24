@@ -5,6 +5,7 @@
     padding-left: 50px;
     display: grid;
     grid-template-columns: repeat(3, 230px);
+    margin-bottom: 400px;
 }
 
 .box {
